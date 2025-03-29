@@ -148,3 +148,27 @@
 // let emp = new Join_company('Balachandar',22,'Sivakumar')
 
 // emp.detail()
+
+
+//////////////////////////////////////////////////////////Abstraction oops
+
+
+class Std {
+    constructor(name, pass){
+        this.name=name
+        this.pass = pass
+    }
+
+    #password(){
+       return `This is my secreate pass word ${this.pass}`
+    }
+
+    detail(){
+        console.log(`My name is ${this.name} and ${this.#password()}`);
+        
+    }
+}
+
+let student = new Std('Bala','ggr82t5404ru34')
+
+student.detail()
